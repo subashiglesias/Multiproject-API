@@ -1,0 +1,125 @@
+{
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "foxo:NamedEntityRecognition",
+        "prov:Activity"
+      ],
+      "endedAtTime": "2018-05-08T15:18:15.263+05:30",
+      "generated": [
+        "http://ns.aksw.org/fox/demo/document-1#char457,471",
+        "http://ns.aksw.org/fox/demo/document-1#char699,711"
+      ],
+      "startedAtTime": "2018-05-08T15:18:15.149+05:30",
+      "used": "foxr:org.aksw.fox.tools.ner.en.IllinoisExtendedEN"
+    },
+    {
+      "@id": "http://ns.aksw.org/fox/demo/document-1#char0,761",
+      "@type": "nif:Context",
+      "beginIndex": "0",
+      "endIndex": "761",
+      "isString": "\"Oh, she has turned all the men’s heads downin that part. She is the daintiest thing under a bonneton this planet. So say the Serpentine-mews, toa man. She lives quietly, sings at concerts, drivesout at five every day, and returns at seven sharpfor dinner. Seldom goes out at other times, exceptwhen she sings. Has only one male visitor, buta good deal of him. He is dark, handsome, anddashing, never calls less than once a day, and oftentwice. He is a Mr. Godfrey Norton, of the InnerTemple. See the advantages of a cabman as a confidant.They had driven him home a dozen timesfrom Serpentine-mews, and knew all about him.When I had listened to all they had to tell, I beganto walk up and down near Briony Lodge once more,and to think over my plan of campaign.\""
+    },
+    {
+      "@id": "http://ns.aksw.org/fox/demo/document-1#char457,471",
+      "@type": "nif:Phrase",
+      "anchorOf": "Godfrey Norton",
+      "beginIndex": "457",
+      "endIndex": "471",
+      "referenceContext": "http://ns.aksw.org/fox/demo/document-1#char0,761",
+      "taClassRef": [
+        "foxo:PERSON",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "schema:Person",
+        "dbo:Person"
+      ],
+      "taIdentRef": "http://aksw.org/notInWiki/GodfreyNorton"
+    },
+    {
+      "@id": "http://ns.aksw.org/fox/demo/document-1#char699,711",
+      "@type": "nif:Phrase",
+      "anchorOf": "Briony Lodge",
+      "beginIndex": "699",
+      "endIndex": "711",
+      "referenceContext": "http://ns.aksw.org/fox/demo/document-1#char0,761",
+      "taClassRef": [
+        "foxo:PERSON",
+        "schema:Person",
+        "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person",
+        "dbo:Person"
+      ],
+      "taIdentRef": "http://aksw.org/notInWiki/BrionyLodge"
+    },
+    {
+      "@id": "foxr:org.aksw.fox.tools.ner.en.IllinoisExtendedEN",
+      "@type": [
+        "schema:SoftwareApplication",
+        "prov:SoftwareAgent"
+      ],
+      "softwareVersion": "2.8.1",
+      "name": "org.aksw.fox.tools.ner.en.IllinoisExtendedEN"
+    }
+  ],
+  "@context": {
+    "generated": {
+      "@id": "http://www.w3.org/ns/prov#generated",
+      "@type": "@id"
+    },
+    "used": {
+      "@id": "http://www.w3.org/ns/prov#used",
+      "@type": "@id"
+    },
+    "endedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#endedAtTime"
+    },
+    "startedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#startedAtTime"
+    },
+    "taClassRef": {
+      "@id": "http://www.w3.org/2005/11/its/rdf#taClassRef",
+      "@type": "@id"
+    },
+    "referenceContext": {
+      "@id": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#referenceContext",
+      "@type": "@id"
+    },
+    "endIndex": {
+      "@id": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#endIndex",
+      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "anchorOf": {
+      "@id": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#anchorOf"
+    },
+    "beginIndex": {
+      "@id": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#beginIndex",
+      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taIdentRef": {
+      "@id": "http://www.w3.org/2005/11/its/rdf#taIdentRef",
+      "@type": "@id"
+    },
+    "isString": {
+      "@id": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#isString"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "softwareVersion": {
+      "@id": "http://schema.org/softwareVersion"
+    },
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "its": "http://www.w3.org/2005/11/its/rdf#",
+    "nif": "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foxo": "http://ns.aksw.org/fox/ontology#",
+    "dbo": "http://dbpedia.org/ontology/",
+    "oa": "http://www.w3.org/ns/oa#",
+    "foxr": "http://ns.aksw.org/fox/resource#",
+    "dbr": "http://dbpedia.org/resource/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }
+}
